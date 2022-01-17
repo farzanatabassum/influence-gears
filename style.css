@@ -163,6 +163,9 @@ i{
   
 
 }
+.fa-arrow-right{
+    margin-left: 2px;
+}
 /* bonus part */
 .bonus{
     display:flex;
