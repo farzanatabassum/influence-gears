@@ -22,7 +22,7 @@ h4{
 
 }
 .content{
-    width: 582px;
+    width:50%;
     height: 270px;
 }
 /* Transition effect */
@@ -73,20 +73,18 @@ p{
     font-weight: 600;
     font-size: 28px;
     line-height: 70px;
-    margin-left:590px;
+    margin-left:580px;
 }
 .container{
     width:1047px;
     height: 1662px;
-    margin-left: 196px;
-    display:flex;
-    flex-wrap: wrap;
+    margin-left: 100px;
   
 }
 .blogs{
     display:grid;
     grid-template-columns: repeat(3,1fr);
-    grid-gap: 30px;
+    grid-gap: 2em;
 }
 .blog{
     width: 329px;
@@ -97,9 +95,8 @@ p{
     flex-direction: column;
 }
 .blog-photo{
-    display: flex;
-    justify-content: center;
-    margin-top:17px;
+   width:100%;
+   margin-left: 14px;
 }
 .blog-title{
   margin-top:-32px;
@@ -152,15 +149,18 @@ i{
     margin-top: -8px;
 
 }
-
 .more{
     position:relative;
+    margin-top: 20px;
     margin-left: 950px;
     font-style: normal;
     font-weight: bold;
     font-size: 16px;
     line-height: 24px;
     color: rgba(224, 44, 109, 0.87);
+    display:flex;
+    align-items: center;
+  
 
 }
 /* bonus part */
@@ -242,3 +242,59 @@ h3{
     margin-right: 10px;
 }
 
+
+/* Media Queries */
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+
+    .title{
+        margin-left: 0;
+        position: relative;
+        top:60px;
+        bottom:150px;
+        left:150px;
+    } 
+
+    .blogs{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+    }
+    .more{
+        position:absolute;
+       margin-left: 0px;
+       right:1%;
+    
+    }
+    .bonus{
+        margin-top: 3000px;
+    }
+
+}
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 601px){
+
+    .title{
+        margin-left: 0;
+        position: relative;
+        top:60px;
+        left:150px;
+    } 
+
+    .blogs{
+        display: grid;
+        grid-template-columns:repeat(1,1fr);
+
+    }
+    .more{
+     position:absolute;
+       margin-left: 0px;
+       right:15%;
+    
+    }
+    .bonus{
+        margin-top: 3000px;
+    }
+  
+  
+   
+}
