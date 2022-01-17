@@ -293,8 +293,26 @@ h3{
     }
     .bonus{
         margin-top: 3000px;
-    }
-  
-  
-   
+    } 
 }
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    
+    .title{
+        margin-left: 0;
+        position: relative;
+        top:60px;
+        left:350px;
+    } 
+    .blogs{
+        display: grid;
+        grid-template-columns:repeat(2,0.2fr);
+
+    }
+    .bonus{
+        margin-top: 1000px;
+    } 
+}
+
+
