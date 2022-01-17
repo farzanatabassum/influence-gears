@@ -297,7 +297,7 @@ h3{
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (min-width: 768px) and (max-width: 992px) {
+@media only screen and (min-width: 769px) and (max-width: 992px) {
     
     .title{
         margin-left: 0;
@@ -307,8 +307,14 @@ h3{
     } 
     .blogs{
         display: grid;
-        grid-template-columns:repeat(2,0.2fr);
+        grid-template-columns:repeat(2,0.1fr);
 
+    }
+    .more{
+        position:absolute;
+       margin-left: 0px;
+       right:20%;
+    
     }
     .bonus{
         margin-top: 1000px;
